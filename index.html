@@ -8,20 +8,21 @@
 </head>
 <body>
     <header>
-        <img src="./assets/favicon-blue.ico" alt="logo alura"> 
+        <img class="img__logo" src="./assets/favicon-blue.ico" alt="">
     </header>
-    <main>
-        <section>
-            <label>Digite seu texto</label>
-            <textarea></textarea>
-            <span>Apenas letras minúsculas e sem acento.</span>
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <div class="apresentacao__conteudo__text">
+                <label class="label">Digite seu texto</label>
+                <textarea class="text-decodificador" name="text-decodificador" id="text"></textarea>
+            </div>
+            <div class="apresentacao__conteudo__btn">
+                <button class="apresentacao__conteudo__btn__designer">Criptografar</button>
+                <button class="apresentacao__conteudo__btn__designer">Descriptografar</button>
+            </div>
          </section>
-         <section>
-            <img src="./assets/no-message-found-blue.svg" alt="imagem de um garoto com uma lupa">
-            <h1>Nenhuma mensagem encontrada</h1>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+         <section class="apresentacao__conteudo__criptogradado">
+            <h1>conteudo</h1>
          </section>
     </main>
     <footer></footer>
