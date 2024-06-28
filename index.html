@@ -11,24 +11,34 @@
         <img class="img__logo" src="./assets/favicon-blue.ico" alt="">
     </header>
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <div class="apresentacao__conteudo__text">
-                <label class="label">Digite seu texto</label>
-                <textarea class="text-decodificador" name="text-decodificador" id="text" rows="15"></textarea>
+        <div class="app-container">
+            <div class="wrap-input-header">
+            <section class="input-message">
+                    <div>
+                    <!--<label class="label">Digite seu texto</label> -->  
+                        <textarea class="text-decodificador" name="text-decodificador" id="text" rows="3" cols="3" placeholder="Digite seu texto"></textarea>
+                    </div>
+                        
+                    <div class="btn-container">
+                        <div class="btn-container-requerimento">
+                            <img src="./assets/exclamation-circle.svg" alt="">
+                            <span>Apenas letras minúsculas e sem acento.</span>
+                        </div>
+                        <div class="btn-encrypt-decrypt">
+                            <button class="btn-blue">Criptografar</button>
+                            <button class="btn-grey">Descriptografar</button>
+                        </div>
+                    </div>    
+            </section>
             </div>
-            <div class="apresentacao__conteudo__btn">
-                
-                <button class="apresentacao__conteudo__btn__criptografar">Criptografar</button>
-                <button class="apresentacao__conteudo__btn__descriptografar">Descriptografar</button>
-            </div>
-         </section>
-         <section class="apresentacao__conteudo__criptogradado">
-            <a class="apresentacao__conteudo__criptogradado__retangulo">
-                <img src="./assets/no-message-found-blue.svg" alt="">
-                <h1>Nenhuma mensagem encontrada</h1>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </a>
-         </section>
+            <section class="resultado">
+                <a>
+                    <img src="./assets/no-message-found-blue.svg" alt="">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </a>
+            </section>
+        </div>
     </main>
     <footer>desenvolvido por Felipe dos Santos</footer>
 </body>
