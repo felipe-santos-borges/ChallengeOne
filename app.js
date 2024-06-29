@@ -1,0 +1,5 @@
+let msgEncriptada; 
+
+function btnEncriptar() {
+
+}
