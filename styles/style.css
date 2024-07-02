@@ -42,7 +42,9 @@ body {
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeLegibility;
     background-color: var(--current-method-background-color);
+    
 }
+
 
 .img__logo {
     width: 31.9px;
