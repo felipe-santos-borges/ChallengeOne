@@ -1,4 +1,7 @@
-
+let elementoInput = document.getElementById('msg');
+elementoInput.style.display = "none";
+let elementoBtnCopiar = document.getElementById('btn-copiar');
+elementoBtnCopiar.style.display = "none";
 /* Regras Codificador: 
 "e" é convertido para "enter" 
 "i" é convertido para "imes"
@@ -30,9 +33,10 @@ titulo.innerHTML = texto;
     
 }
 
-exibirTextoTela('h2', 'mensagem porra');
+exibirTextoTela('h2[id="h2"]', 'Nenhuma mensagem encontrada!');
+exibirTextoTela('p[id="p"]', 'Digite um texto que você deseja criptografar ou descriptografar.');
 
-/*function encriptar(texto){
+/*function encriptar(texto)
         const chaveCri = {
         'a':'ai',
         'e':'enter',

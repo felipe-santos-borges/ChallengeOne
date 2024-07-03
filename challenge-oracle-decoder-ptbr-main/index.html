@@ -12,22 +12,31 @@
 
   <main class="main">
     <section class="form box">
-      
-        <label for="input-texto">Apenas letras minúsculas, sem acento</label>
+      <div class="form-box-div">
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-       <button class="btn" onclick="encriptarTexto()">Criptografar!</button> 
-        
-        <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
-     
+    </div>
+    <div class="btn-btn">
+        <div class="">
+          <img src="./assets/exclamation-circle.svg" alt="">
+            <span for="input-texto">Apenas letras minúsculas, sem cento</span>
+        </div>
+        <div>
+          <button class="btn" onclick="encriptarTexto()">Criptografar!</button> 
+          <button class="btn">Descriptografar!</button>
+          
+        </div>
+      </div>  
     </section>
   
     <section class="msg box">
-      <input class="text-input" type="text" id="msg" name="msg"></input>
-      <button class="btn" onclick="copiaTexto()">Copiar</button>
-      <h2 id=""></h2>
-      <p></p>
+      <img src="./assets/no-message-found-blue.svg" alt="">
+      <input class="text-input" type="text" id="msg" name="msg" ></input>
+      <button class="btn" id="btn-copiar" onclick="copiaTexto()">Copiar</button>
+      <h2 class="msg-h2" id="h2"></h2>
+      <p class="msg-p" id="p"></p>
     </section>
   </main>
+  <footer></footer>
 
   <script src="script.js"></script>
 </body>

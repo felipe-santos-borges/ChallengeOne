@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,32 @@ body {
   height: auto;
 }
 
+.msg.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  height: 944px;
+}
+
+.msg-h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #343A40;
+}
+
+.msg-p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495057;
+}
+
 .btn {
   border: 0;
   color: white;
@@ -41,6 +68,11 @@ body {
   padding: 10px;
   margin-top: 10px;
   border-radius: 0.5em;
+}
+
+.btn-btn {
+  display: flex;
+  flex-direction: column;
 }
 
 .text-input {
