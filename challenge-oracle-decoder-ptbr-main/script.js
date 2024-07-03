@@ -1,7 +1,11 @@
+
 let elementoInput = document.getElementById('msg');
 elementoInput.style.display = "none";
 let elementoBtnCopiar = document.getElementById('btn-copiar');
 elementoBtnCopiar.style.display = "none";
+let elementoImg = document.getElementById('found-blue');
+let elementoTitulo = document.getElementById('h2');
+let elementoParagrafo = document.getElementById('p');
 /* Regras Codificador: 
 "e" é convertido para "enter" 
 "i" é convertido para "imes"
@@ -36,52 +40,7 @@ titulo.innerHTML = texto;
 exibirTextoTela('h2[id="h2"]', 'Nenhuma mensagem encontrada!');
 exibirTextoTela('p[id="p"]', 'Digite um texto que você deseja criptografar ou descriptografar.');
 
-/*function encriptar(texto)
-        const chaveCri = {
-        'a':'ai',
-        'e':'enter',
-        'i':'imes',
-        'o':'ober',
-        'u':'ufat'
-    }
-    let textoCriptgrafado = '';
 
-    for (let letra of texto){
-        if (chaveCri.hasOwnProperty(letra)){
-            textoCriptgrafado += chaveCri[letra];
-        }else{
-            textoCriptgrafado += letra;
-        }
-    }
-    return textoCriptgrafado;
-
-}
-
-function desincriptar(textoCriptgrafado){
-    
-      const chaveInvertida = {
-        'ai':'a',
-        'enter':'e',
-        'imes':'i',
-        'ober':'o',
-        'ufat':'u'
-      };
-
-    for (const [chave,valor] of Object.entries(chaveCri)){
-        chaveInvertida[valor] = chave;
-    }
-
-    let textoDescriptografado = '';   
-
-    for (let letra of textoCriptgrafado){
-        if (chaveInvertida.hasOwnProperty(letra)){
-            textoDescriptografado += chaveInvertida[letra];
-        }else{
-            textoDescriptografado += letra;
-        }
-    }
-    return textoDescriptografado;
-}*/
 
 function codifica(texto){
     let caracteres = texto.split("");
@@ -120,6 +79,11 @@ function encriptarTexto(){
    console.log(textoCriptgrafado);
    document.getElementById('msg').value = textoCriptgrafado;
    limparCampo('input[name="input-texto"]');
+   elementoInput.style.display = "block";
+   elementoBtnCopiar.style.display = "block";
+   elementoImg.style.display = "none";
+   elementoTitulo.style.display = "none";
+   elementoParagrafo.style.display = "none";
 }
 
 function copiaTexto(){
@@ -132,6 +96,13 @@ function copiaTexto(){
    document.getElementById('input-texto').value = textoCriptgrafado;
    console.log(textoCriptgrafado);
    limparCampo('input[name="msg"]');
+}
+
+function decriptarTexto() {
+    let textoCriptografado = document.getElementById('input-texto').value;
+    let textoDescriptografado = decodifica(textoCriptografado);
+    document.getElementById('msg').value = textoDescriptografado;
+    limparCampo('input[name="input-texto"]');
 }
 
 function limparCampo(tag){

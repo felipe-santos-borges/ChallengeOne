@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,33 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1 class="titulo">código secreto</h1>
 
   <main class="main">
+
     <section class="form box">
       <div class="form-box-div">
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-    </div>
-    <div class="btn-btn">
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Digite seu texto">
+      </div>
+
+      <div class="btn-btn">
         <div class="">
-          <img src="./assets/exclamation-circle.svg" alt="">
-            <span for="input-texto">Apenas letras minúsculas, sem cento</span>
+          <img class="img-span" src="./assets/exclamation-circle.svg" alt="">
+          <span class="span" for="input-texto">Apenas letras minúsculas, sem cento</span>
         </div>
         <div>
-          <button class="btn" onclick="encriptarTexto()">Criptografar!</button> 
-          <button class="btn">Descriptografar!</button>
-          
+          <button class="btn" onclick="encriptarTexto()">Criptografar!</button>
+          <button class="btn" onclick="decriptarTexto()">Descriptografar!</button>
+
         </div>
-      </div>  
+      </div>
     </section>
-  
+
     <section class="msg box">
-      <img src="./assets/no-message-found-blue.svg" alt="">
-      <input class="text-input" type="text" id="msg" name="msg" ></input>
+      <img id="found-blue" src="./assets/no-message-found-blue.svg" alt="">
+      <input class="text-input" type="text" id="msg" name="msg"></input>
       <button class="btn" id="btn-copiar" onclick="copiaTexto()">Copiar</button>
       <h2 class="msg-h2" id="h2"></h2>
       <p class="msg-p" id="p"></p>
@@ -40,4 +44,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
