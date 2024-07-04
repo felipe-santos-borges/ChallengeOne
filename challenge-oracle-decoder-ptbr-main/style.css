@@ -75,8 +75,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: px 0px 0px 0px;
-  width: 400px;
   height: 600px;
 }
 
@@ -86,6 +84,7 @@ body {
 
 .main-form-box {
     display: flex;
+    flex-direction: row;
     
 }
 
@@ -230,4 +229,41 @@ footer a:link {
 
 footer a:visited {
   color: var(--current-method-primary-color);
+}
+
+@media (max-width: 768px) {
+  .main-form-box{
+    flex-direction: column;
+  }
+
+  .form.box {
+    margin-left: 40px;
+    margin-top: 180px;
+  }
+
+  .msg.box{
+    width: 688px;
+    height: 343px;
+    margin-left: 0px;
+  }
+
+  .msg-box {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+  #found-blue{
+    display: none;
+  }
+
+  .btn.blue.copiar {
+    margin-top: 30%;
+    margin-left: 30px;
+    width: 624px;
+    background: var(--current-method-primary-color);
+    border: none;
+    color: var(--white-color);
+  }
+
+
 }
