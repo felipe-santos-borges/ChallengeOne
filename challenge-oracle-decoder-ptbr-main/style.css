@@ -38,47 +38,55 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form.box{
-  
+.header {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.img-header {
+  width: 48px;
+  height: 48px;
+}
+
+.form-box-div{
+  display: flex;
+  flex-direction: row;
 }
 
 .main {
-  width: 80vw;
-  margin: auto;
+  width: 100vw;
   display: flex;
-  justify-content: center;
 }
 
 .titulo {
   padding: 15px;
   width: 30vw;
   margin: auto;
-
 }
 
-.box {
-  padding: 10px;
-  margin: 0 10px 0 10px;
- 
-  width: 30vw;
-  height: auto;
+.form.box {
+  margin-left: 240px;
+  margin-top: 24px;
 }
 
 .msg.box {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
-  border-radius: 0.5em;
-}
-
-
-
-
-
-.msg.box {
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  
+  width: 400px;
+  padding: px 0px 0px 0px;
+  width: 400px;
+  height: 600px;
+}
+
+.msg-box{
+  margin-left: 150px;
+}
+
+.main-form-box {
+    display: flex;
+    
 }
 
 .msg-h2 {
@@ -100,22 +108,44 @@ body {
 }
 
 .btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
-  background-color: blue;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 0.5em;
+    padding: 24px;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 1.6rem;
+    transition: all .15s;
+}
+
+  .btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+  }
+
+
+.btn.blue {
+  background: var(--current-method-primary-color);
+  border: none;
+  color: var(--white-color);
+}
+
+.btn.gray {
+  background: var(--current-method-secondary-color);
+  border: 1px solid var(--current-method-primary-color);
+  color: var(--current-method-primary-color);
+}
+
+.btn.blue.copiar {
+  margin-top: 100%;
+  margin-left: 30%;
 }
 
 .btn-btn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 8px 0;
-  gap: 8px;
-  padding-top: 100%;
+  margin: 0px 0px 0px 0px;
+  padding-top: 65.9%;
 }
 
 .span {
@@ -143,8 +173,6 @@ body {
   font-size: 32px;
   font-family: "Inter",sans-serif;
   background: none;
-  
-
 }
 
 .text-input::placeholder{
@@ -162,6 +190,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-top: 3%;
+  padding-bottom: 32px;
 }
 
 footer ul {
